@@ -13,32 +13,7 @@ const w = "up";
 const a = "left";
 const s = "down";
 const d = "right";
-const movementArray = [
-  s,
-  s,
-  s,
-  s,
-  d,
-  s,
-  d,
-  d,
-  w,
-  d,
-  d,
-  w,
-  d,
-  d,
-  w,
-  w,
-  a,
-  a,
-  a,
-  w,
-  a,
-  a,
-  a,
-  a,
-];
+const movementArray = [s, s, s, s, d, s, d, d, w, d, d, w, d, d, w, w, a, a, a, w, a, a, a, a,];
 let x = 11;
 for (let i = 0; i < movementArray.length; i++) {
   switch (movementArray[i]) {
@@ -66,7 +41,7 @@ for (let i = 0; i < movementArray.length; i++) {
 }
 let y = 23;
 let loopCount = 0;
-let iterationStopped = false;
+let iterationStopped = true;
 let maxY = movementArray.length - 1;
 let child = document.getElementById("player");
 let parent = document.querySelector(`.road${y}`);
