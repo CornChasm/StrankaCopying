@@ -46,6 +46,7 @@ let maxY = movementArray.length - 1;
 let child = document.getElementById("player");
 let parent = document.querySelector(`.road${y}`);
 const amogus = function () {
+  if(iterationStopped == false){
   console.log(y);
   iterationStopped = false;
   document
@@ -65,6 +66,7 @@ const amogus = function () {
     .querySelector(`.road${y}`)
     .appendChild(document.createElement("div"))
     .setAttribute("id", "player");
+  }
 };
 let walk = setInterval(amogus, 200);
 onclick = () => {
