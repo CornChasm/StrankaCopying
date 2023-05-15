@@ -1,0 +1,35 @@
+html {
+  background-color: #2a2e32;
+}
+#listek {
+  width: 620px;
+  height: 740px;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  background-color: white;
+  background-image: url(./img/Jidelni_listek1.jpg);
+  background-position: 0px -90px;
+  background-size: 620px 877px;
+  transition: background-image 0.7s;
+}
+.leftArrow,
+.rightArrow {
+  position: relative;
+  font-size: 40px;
+  width: 40px;
+  color: #00000066;
+  user-select: none;
+}
+.leftArrow {
+  transform: rotateZ(180deg) translate(0%, 50%);
+  padding-bottom: 12px;
+  top: 50%;
+  left: 0px;
+}
+.rightArrow {
+  transform: translate(-100%, -50%);
+  padding-bottom: 6px;
+  padding-top: 6px;
+  top: 50%;
+  right: -100%;
+}
