@@ -69,7 +69,6 @@ html {
   top: 990px;
   left: 800px;
   text-align: center;
-  outline: red 1px solid;
   font-size: 60px;
   padding: 60px 20px 0px 16px;
   border-bottom: 6px solid rgb(128, 127, 93);
@@ -184,7 +183,6 @@ html {
   top: 540px;
   left: 200px;
   text-align: center;
-  outline: 1px red solid;
   padding-top: 60px;
 }
 .uvodTitle {
