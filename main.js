@@ -51,14 +51,16 @@ center.onclick = () => {
     listek.style.transform = "translate(-50%, 0%)";
     enlargedListekBG.style.display = "block";
     enlargedListekBG.style.height = `${2 * listek.scrollHeight}px`;
+    center.style.cursor = "zoom-out"
     centerText.innerHTML = "klikněte aby zmenšit";
   } else {
     wasListekEnlarged = false;
     listek.style.scale = "1";
-    listek.style.left = "750px";
+    listek.style.left = "0%";
     listek.style.transform = "translate(0%, 0%)";
     enlargedListekBG.style.display = "none";
     enlargedListekBG.style.height = `${100}%`;
+    center.style.cursor = "zoom-in";
     centerText.innerHTML = "klikněte aby zvětšit";
   }
 };
@@ -69,6 +71,7 @@ enlargedListekBG.onclick = () => {
   listek.style.transform = "translate(0%, 0%)";
   enlargedListekBG.style.display = "none";
   enlargedListekBG.style.height = `${100}%`;
+  center.style.cursor = "zoom-in"
   centerText.innerHTML = "klikněte aby zvětšit";
 };
 document.getElementById("navUvod").onclick = () => {
