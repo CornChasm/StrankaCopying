@@ -56,7 +56,7 @@ center.onclick = () => {
   } else {
     wasListekEnlarged = false;
     listek.style.scale = "1";
-    listek.style.left = "0%";
+    listek.style.left = "750px";
     listek.style.transform = "translate(0%, 0%)";
     enlargedListekBG.style.display = "none";
     enlargedListekBG.style.height = `${100}%`;
